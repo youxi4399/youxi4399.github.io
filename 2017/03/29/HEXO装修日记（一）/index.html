@@ -93,7 +93,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/03/29/HEXO装修日记（一）/index.html">
 <meta property="og:site_name" content="吃炒面喝靓汤">
 <meta property="og:description" content="HEXO装修小记（一）将HEXO部署到GITHUB上参考网上的教程，将HEXO部署到GIT上，换一个喜欢的主题，开始改动。需要注意的是HEXO的版本问题，在HEXO3.0之后的版本中deploy git是分开的，所以需要自己安装，安装命令如下：npm install hexo-deployer-git --save 如果不自己安装的话，会在部署到GIT过程中报错，提示找不到GIT。每一次对博客完成">
-<meta property="og:updated_time" content="2017-03-29T10:40:43.083Z">
+<meta property="og:updated_time" content="2017-03-29T11:50:51.685Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HEXO装修日记（一）">
 <meta name="twitter:description" content="HEXO装修小记（一）将HEXO部署到GITHUB上参考网上的教程，将HEXO部署到GIT上，换一个喜欢的主题，开始改动。需要注意的是HEXO的版本问题，在HEXO3.0之后的版本中deploy git是分开的，所以需要自己安装，安装命令如下：npm install hexo-deployer-git --save 如果不自己安装的话，会在部署到GIT过程中报错，提示找不到GIT。每一次对博客完成">
@@ -105,7 +105,7 @@
   var CONFIG = {
     root: '/',
     scheme: 'Mist',
-    sidebar: {"position":"left","display":"hide","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    sidebar: {"position":"left","display":"hide","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false,"Title":"http://example.com/"},
     fancybox: true,
     motion: true,
     duoshuo: {
@@ -378,7 +378,25 @@
 <ul>
 <li><code>hexo clean</code></li>
 <li><code>hexo generate</code> </li>
-<li><code>hexo deploy</code><h2 id="为HEXO更换NexT主题"><a href="#为HEXO更换NexT主题" class="headerlink" title="为HEXO更换NexT主题"></a>为HEXO更换NexT主题</h2>使用<br><a href="http://theme-next.iissnan.com/" target="_blank" rel="external">NexT主题</a>美化自己的HEXO博客。在HEXO根目录下右键GIT Bash Here,使用Git checkout代码克隆最新版本的NexT：<code>git clone https://github.com/iissnan/hexo-theme-next themes/next</code><br>其余的内容推荐阅读NexT的官方文档，进行自主设置。<h2 id="为自己的HEXO博客绑定域名"><a href="#为自己的HEXO博客绑定域名" class="headerlink" title="为自己的HEXO博客绑定域名"></a>为自己的HEXO博客绑定域名</h2>简单的部署好自己的博客后，可以为自己的博客换上一个独有的域名，简单好记。一个.top的域名在阿里云上4元/年，也花不了多少，而且还有更多的选择。国内的话，<a href="https://cn.aliyun.com/" target="_blank" rel="external">阿里云</a>，<a href="https://www.qcloud.com/" target="_blank" rel="external">腾讯云</a>；国外的话可以找<a href="https://www.godaddy.com/" target="_blank" rel="external">狗爹(GoDaddy)</a>。购买好自己的域名后，只需要在域名运营商那里管理自己的域名。为自己的域名添加一个解析，如下：记录类型：CNAME；主机记录：@；记录值：yourgithubname.github.io。如果喜欢www的访问形式也可以再添加一条解析记录，如下：记录类型：CNAME；主机记录：www；记录值：yourgithubname.github.io。<br>最后一定要在本地站点目录里的source目录下添加一个CNAME文件，内容是域名地址，不带www和http。填写好了之后再重新部署到GITHUB上。<h2 id="为HEXO更换icon"><a href="#为HEXO更换icon" class="headerlink" title="为HEXO更换icon"></a>为HEXO更换icon</h2>制作好自己的icon图标后，更名为favicon.ico,然后放置到/source文件夹中，再部署即可。应注意网络延迟的问题。</li>
+<li><code>hexo deploy</code><h2 id="为HEXO更换NexT主题"><a href="#为HEXO更换NexT主题" class="headerlink" title="为HEXO更换NexT主题"></a>为HEXO更换NexT主题</h2>使用<br><a href="http://theme-next.iissnan.com/" target="_blank" rel="external">NexT主题</a>美化自己的HEXO博客。在HEXO根目录下右键GIT Bash Here,使用Git checkout代码克隆最新版本的NexT：<code>git clone https://github.com/iissnan/hexo-theme-next themes/next</code><br>其余的内容推荐阅读NexT的官方文档，进行自主设置。<h2 id="为自己的HEXO博客绑定域名"><a href="#为自己的HEXO博客绑定域名" class="headerlink" title="为自己的HEXO博客绑定域名"></a>为自己的HEXO博客绑定域名</h2>简单的部署好自己的博客后，可以为自己的博客换上一个独有的域名，简单好记。一个.top的域名在阿里云上4元/年，也花不了多少，而且还有更多的选择。国内的话，<a href="https://cn.aliyun.com/" target="_blank" rel="external">阿里云</a>，<a href="https://www.qcloud.com/" target="_blank" rel="external">腾讯云</a>；国外的话可以找<a href="https://www.godaddy.com/" target="_blank" rel="external">狗爹(GoDaddy)</a>。购买好自己的域名后，只需要在域名运营商那里管理自己的域名。为自己的域名添加一个解析，如下：记录类型：CNAME；主机记录：@；记录值：yourgithubname.github.io。如果喜欢www的访问形式也可以再添加一条解析记录，如下：记录类型：CNAME；主机记录：www；记录值：yourgithubname.github.io。<br>最后一定要在本地站点目录里的source目录下添加一个CNAME文件，内容是域名地址，不带www和http。填写好了之后再重新部署到GITHUB上。<h2 id="为HEXO更换icon"><a href="#为HEXO更换icon" class="headerlink" title="为HEXO更换icon"></a>为HEXO更换icon</h2>制作好自己的icon图标后，更名为favicon.ico,然后放置到/source文件夹中，再部署即可。应注意网络延迟的问题。<h2 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h2>如何在HEXO的NexT主题下设置友情链接，这个问题我一直不得其法，后来查阅官方文档获知了方便的做法。在这里传播一下，感谢网友<a href="https://github.com/iissnan/hexo-theme-next/pull/250" target="_blank" rel="external">iamwent</a>的贡献。<br>配置示例：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"># title</div><div class="line">links_title: 友情链接</div><div class="line">links: </div><div class="line">    Mactalk: http://www.macshuo.com/</div><div class="line">    Title: http://example.com/</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>解决方案来自于<a href="http://theme-next.iissnan.com/theme-settings.html" target="_blank" rel="external">官方文档</a>,感谢网友<a href="https://github.com/iissnan/hexo-theme-next/pull/250" target="_blank" rel="external">iamwent</a>的贡献。  </p>
+<h2 id="添加评论功能"><a href="#添加评论功能" class="headerlink" title="添加评论功能"></a>添加评论功能</h2><p>NexT主题集成了很多评论系统，任选其一均可。这里选择<strong>友言</strong>为例。添加步骤如下：</p>
+<ul>
+<li>注册友言账号，注册之后会给你一段JS代码，可以不用理会。</li>
+<li>注册登录完成后，进入后台管理界面，复制下自己的用户ID。</li>
+<li>在<strong>主题配置文件</strong>中设置UID，找到youyan_uid属性，在: 后添加你的UID即可。<h2 id="添加打赏功能"><a href="#添加打赏功能" class="headerlink" title="添加打赏功能"></a>添加打赏功能</h2>通过在打赏界面添加自己的收款二维码即可。理论上支持各种收款码，在<strong>站点配置文件</strong>中添加打赏功能：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">reward_comment: //写上感谢金主的话</div><div class="line">wechat: //收款二维码图片的链接或者相对路径</div><div class="line">alipay: //收款二维码图片的链接或者相对路径</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="添加阅读次数功能"><a href="#添加阅读次数功能" class="headerlink" title="添加阅读次数功能"></a>添加阅读次数功能</h2><p>在文章标题下面添加显示阅读次数的功能，可以让自己的心理得到一定程度上的满足。实际上就是对用户访问该文章界面的统计，实际上就是一串可以修改的数字。阅读次数统计是通<a href="https://leancloud.cn/" target="_blank" rel="external">LeanCloud</a>实现的。和添加评论功能一样，步骤如下：</p>
+<ul>
+<li>注册完成登录，完成必要的认证。</li>
+<li>进入控制台，创建新应用，选择开发版即可。</li>
+<li>在新建的应用中选择存储，点击“创建Class”创建一个新的类。为了方便将Class类名称写为Counter，并选择无限制选项，单击完成。</li>
+<li>选择设置，获得应用Key中的AppID与AppKey内容，进行<strong>主题配置文件</strong>中<code>leanCloud_visitors</code>属性的设为<code>true</code>，将阅读次数数据与站点关联起来，将AppID和AppKey复制粘贴进来。<h2 id="特别提醒"><a href="#特别提醒" class="headerlink" title="特别提醒"></a>特别提醒</h2></li>
+<li>配置文件中，属性后面的值在冒号后一定要有一个<strong>半角空格</strong>。</li>
+<li>每次完成修改后，一定要重新进行部署。</li>
 </ul>
 
       
@@ -551,6 +569,32 @@
 
         
         
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              友情链接
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://weibo.com/u/5590017913?refer_flag=1005050005_&is_all=1" title="宝贝微博" target="_blank">宝贝微博</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://weibo.com/5381994744/profile?topnav=1&wvr=6&is_all=1" title="傻逼微博" target="_blank">傻逼微博</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://weibo.com/u/5425706512?refer_flag=1005050005_&is_all=1" title="金主微博" target="_blank">金主微博</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://xiaoniaojun.cn" title="小鸟君's Blog" target="_blank">小鸟君's Blog</a>
+                </li>
+              
+            </ul>
+          </div>
+        
 
         
 
@@ -567,7 +611,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HEXO装修小记（一）"><span class="nav-number">1.</span> <span class="nav-text">HEXO装修小记（一）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#将HEXO部署到GITHUB上"><span class="nav-number">1.1.</span> <span class="nav-text">将HEXO部署到GITHUB上</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为HEXO更换NexT主题"><span class="nav-number">1.2.</span> <span class="nav-text">为HEXO更换NexT主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为自己的HEXO博客绑定域名"><span class="nav-number">1.3.</span> <span class="nav-text">为自己的HEXO博客绑定域名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为HEXO更换icon"><span class="nav-number">1.4.</span> <span class="nav-text">为HEXO更换icon</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#HEXO装修小记（一）"><span class="nav-number">1.</span> <span class="nav-text">HEXO装修小记（一）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#将HEXO部署到GITHUB上"><span class="nav-number">1.1.</span> <span class="nav-text">将HEXO部署到GITHUB上</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为HEXO更换NexT主题"><span class="nav-number">1.2.</span> <span class="nav-text">为HEXO更换NexT主题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为自己的HEXO博客绑定域名"><span class="nav-number">1.3.</span> <span class="nav-text">为自己的HEXO博客绑定域名</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为HEXO更换icon"><span class="nav-number">1.4.</span> <span class="nav-text">为HEXO更换icon</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#友情链接"><span class="nav-number">1.5.</span> <span class="nav-text">友情链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加评论功能"><span class="nav-number">1.6.</span> <span class="nav-text">添加评论功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加打赏功能"><span class="nav-number">1.7.</span> <span class="nav-text">添加打赏功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加阅读次数功能"><span class="nav-number">1.8.</span> <span class="nav-text">添加阅读次数功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特别提醒"><span class="nav-number">1.9.</span> <span class="nav-text">特别提醒</span></a></li></ol></li></ol></div>
             
 
           </div>
