@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+    
+  <url>
+    <loc>http://yoursite.com/2017/03/29/HEXO%E8%A3%85%E4%BF%AE%E6%97%A5%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
+    <lastmod>2017-03-31T02:53:52.222Z</lastmod>
+    <data>
+        <display>
+        <title>HEXO装修日记（一）</title>
+        <pubTime>2017-03-29T10:39:58.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Web前端" url="http://yoursite.com/categories/Web%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2017/03/28/%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2/</loc>
+    <lastmod>2017-03-31T02:53:28.838Z</lastmod>
+    <data>
+        <display>
+        <title>写在前面</title>
+        <pubTime>2017-03-28T12:25:49.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="慢生活" url="http://yoursite.com/categories/%E6%85%A2%E7%94%9F%E6%B4%BB/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2017/03/23/hello-world/</loc>
+    <lastmod>2017-03-31T02:53:14.149Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2017-03-22T19:23:15.486Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="Web前端" url="http://yoursite.com/categories/Web%E5%89%8D%E7%AB%AF/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+</urlset>
