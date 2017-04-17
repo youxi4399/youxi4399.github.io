@@ -95,7 +95,7 @@
 <meta property="og:site_name" content="你与我的86400 |">
 <meta property="og:description" content="JavaScript属性修改属性读操作：获取找到：元素.属性名属性写操作：修改，删除，添加。通过”.”操作符可以得到属性值，再使用类似于赋值的方法，可以对其重新的修改。如果要读取标签内的内容，则需要用到innerHTML属性。  
 添加内容通过使新的内容包含原来的内容加到新内容中。例如：innerHTML = innerHTML + oText.value;等同于innerHTML += oTex">
-<meta property="og:updated_time" content="2017-04-16T13:33:07.933Z">
+<meta property="og:updated_time" content="2017-04-17T02:37:49.264Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JS笔记2">
 <meta name="twitter:description" content="JavaScript属性修改属性读操作：获取找到：元素.属性名属性写操作：修改，删除，添加。通过”.”操作符可以得到属性值，再使用类似于赋值的方法，可以对其重新的修改。如果要读取标签内的内容，则需要用到innerHTML属性。  
@@ -376,7 +376,11 @@
 <h2 id="添加内容"><a href="#添加内容" class="headerlink" title="添加内容"></a>添加内容</h2><p>通过使新的内容包含原来的内容加到新内容中。例如：<br><code>innerHTML = innerHTML + oText.value;</code><br>等同于<br><code>innerHTML += oText.value;</code></p>
 <h2 id="属性读写操作注意事项"><a href="#属性读写操作注意事项" class="headerlink" title="属性读写操作注意事项"></a>属性读写操作注意事项</h2><p>写入”script”标签时应该注意使用window.onload()使其在页面加载完成后才使用script脚本。<br>使用JS时，-是不被允许的。如font-size -&gt; fontSize；去掉-改为后面的第一个字母大写。  </p>
 <h2 id="设置class属性"><a href="#设置class属性" class="headerlink" title="设置class属性"></a>设置class属性</h2><p>因为在JavaScript中class是一个保留字，所以如果要设置class属性的话(JavaScript关键字：var function 等；保留字:class 等)就需要设置为className;如果需要设置的属性太多，可以先设置一个class类，再在JavaScript中调用class。</p>
-<h2 id="相对路径不要拿来做判断"><a href="#相对路径不要拿来做判断" class="headerlink" title="相对路径不要拿来做判断"></a>相对路径不要拿来做判断</h2><p>在编写html文件时，不要用相对路径作为判断依据，非常得不方便，在兼容性上容易出问题，另外也不通用。</p>
+<h2 id="相对路径不要拿来做判断"><a href="#相对路径不要拿来做判断" class="headerlink" title="相对路径不要拿来做判断"></a>相对路径不要拿来做判断</h2><ol>
+<li>在编写html文件时，不要用相对路径作为判断依据，非常得不方便，在兼容性上容易出问题，另外也不通用。</li>
+<li>颜色值也不要拿来做判断，因为颜色值得表达方式有很多种，比如 red #f00 rgb(255, 0, 0);</li>
+<li>innerHTML也不要拿来做判断。 <h2 id="注意IE的兼容性"><a href="#注意IE的兼容性" class="headerlink" title="注意IE的兼容性"></a>注意IE的兼容性</h2>IE有3个老版本浏览器，IE6, IE7， IE8。在三个浏览器中很多标签或者表达方式都是不能正常解析出来的，需要考虑兼容性。比如设置Div.style.float的属性值，IE(styleFloat), 非IE(cssFloat)绕过float，使用class(className)来绕过浮动。<h2 id="操作符"><a href="#操作符" class="headerlink" title=".操作符"></a>.操作符</h2>.操作符在多次使用的时候不方便，这时可以使用[]来获取；比如：<code>oDiv.style.oAttr.value   -&gt; oDiv.style[oAttr.value]</code><br>因为.操作符后面的值无法修改，而[]里的值可以随便写，在[]中最好有引号。</li>
+</ol>
 
       
     </div>
@@ -590,7 +594,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#JavaScript属性修改"><span class="nav-number">1.</span> <span class="nav-text">JavaScript属性修改</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加内容"><span class="nav-number">2.</span> <span class="nav-text">添加内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#属性读写操作注意事项"><span class="nav-number">3.</span> <span class="nav-text">属性读写操作注意事项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置class属性"><span class="nav-number">4.</span> <span class="nav-text">设置class属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#相对路径不要拿来做判断"><span class="nav-number">5.</span> <span class="nav-text">相对路径不要拿来做判断</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#JavaScript属性修改"><span class="nav-number">1.</span> <span class="nav-text">JavaScript属性修改</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加内容"><span class="nav-number">2.</span> <span class="nav-text">添加内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#属性读写操作注意事项"><span class="nav-number">3.</span> <span class="nav-text">属性读写操作注意事项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#设置class属性"><span class="nav-number">4.</span> <span class="nav-text">设置class属性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#相对路径不要拿来做判断"><span class="nav-number">5.</span> <span class="nav-text">相对路径不要拿来做判断</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注意IE的兼容性"><span class="nav-number">6.</span> <span class="nav-text">注意IE的兼容性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#操作符"><span class="nav-number">7.</span> <span class="nav-text">.操作符</span></a></li></ol></div>
             
 
           </div>
